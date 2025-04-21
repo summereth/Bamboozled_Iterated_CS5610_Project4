@@ -33,6 +33,10 @@ export default function QuizCard({
               variant="outline-primary rounded"
               size="sm"
               className="me-2"
+              style={{
+                border: "var(--color-theme) solid",
+                color: "var(--color-theme)",
+              }}
               onClick={(e) => handleButtonClick(e, onEdit)}
             >
               <BsPencilFill size={14} />
@@ -40,6 +44,10 @@ export default function QuizCard({
             <Button
               variant="outline-danger rounded"
               size="sm"
+              style={{
+                border: "var(--color-accent) solid",
+                color: "var(--color-accent)",
+              }}
               onClick={(e) => handleButtonClick(e, onDelete)}
             >
               <BsTrashFill size={14} />

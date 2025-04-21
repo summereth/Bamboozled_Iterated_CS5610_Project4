@@ -13,7 +13,7 @@ function Progress() {
         variant="info"
         style={{
           height: "12px",
-          backgroundColor: "var(--color-medium)",
+          backgroundColor: "var(--color-darkest)",
           borderRadius: "100px",
         }}
       />

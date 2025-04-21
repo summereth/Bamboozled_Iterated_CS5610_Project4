@@ -27,8 +27,11 @@ export default function Header() {
             <Button
               as={Link}
               to="/create"
-              variant="primary"
               className="ms-3 rounded-pill"
+              style={{
+                border: "var(--color-theme) solid 2px",
+                backgroundColor: "var(--color-theme)",
+              }}
             >
               Create a Quiz
             </Button>

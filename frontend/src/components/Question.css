@@ -1,11 +1,11 @@
 :root {
-  --color-darkest: #343a40;
-  --color-dark: #495057;
-  --color-medium: #ced4da;
-  --color-light: #f1f3f5;
+  --color-darkest: #27374d;
+  --color-dark: #526d82;
+  --color-medium: #9db2bf;
+  --color-light: #dde6ed;
 
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-theme: #36ba98;
+  --color-accent: #e76f51;
 }
 
 .options {
@@ -28,7 +28,7 @@
 .quiz .btn-option.wrong {
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
+  color: var(--color-light);
 }
 
 .answer {
