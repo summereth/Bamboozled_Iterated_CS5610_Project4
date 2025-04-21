@@ -148,7 +148,14 @@ export default function CreateQuizScreen() {
                 </Button>
               </Col>
               <Col className="text-end">
-                <Button type="submit" variant="primary">
+                <Button
+                  type="submit"
+                  style={{
+                    border: "var(--color-theme) solid",
+                    backgroundColor: "var(--color-theme)",
+                    color: "var(--color-darkest)",
+                  }}
+                >
                   Create
                 </Button>
               </Col>

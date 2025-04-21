@@ -49,7 +49,7 @@ In this project we will apply concepts learned by building a full-stack applicat
 
 ### Option 1: Live demo
 
-[Website link](https://bamboozled-theta.vercel.app/)
+[Website link](https://bamboozlediterated.vercel.app/)
 
 Project deployed with Vercel. Database deployed with MongoDB Atlas.
 
@@ -79,16 +79,16 @@ Copy `.example.env` file and change the name to `.env`. Modify environment varia
 - 2 collections (quiz and question) are used. See `/db` folder.
 - CRUD on colleciton `quiz`:
   - features:
-    - [create quiz](https://bamboozled-theta.vercel.app/create)
-    - [quiz list](https://bamboozled-theta.vercel.app/)
-    - [update quiz name](https://bamboozled-theta.vercel.app/)
-    - [delete quiz](https://bamboozled-theta.vercel.app/)
+    - [create quiz](https://bamboozlediterated.vercel.app/create)
+    - [quiz list](https://bamboozlediterated.vercel.app/)
+    - [update quiz name](https://bamboozlediterated.vercel.app/)
+    - [delete quiz](https://bamboozlediterated.vercel.app/)
   - backend API: see `routes/quizRoutes.js`
 - CRD on collection `question`:
   - feature:
-    - [create quiz](https://bamboozled-theta.vercel.app/create)
-    - [quiz list](https://bamboozled-theta.vercel.app/)
-    - [delete quiz](https://bamboozled-theta.vercel.app/)
+    - [create quiz](https://bamboozlediterated.vercel.app/create)
+    - [quiz list](https://bamboozlediterated.vercel.app/)
+    - [delete quiz](https://bamboozlediterated.vercel.app/)
   - backend API: see `routes/quizRoutes.js`
 
 ### Is the database populated with at least 1k synthetic records?
