@@ -97,6 +97,7 @@ Though I only have 24 quizzes. Questions from those quizzes in total are over 10
 
 ## Other documents
 
+- [Usability Study Report](./docs/Usability%20Study%20Report.pdf)
 - [Google Slides](https://docs.google.com/presentation/d/1SpAAdwCdAoXYDZog9k_A53dew7cwrjwyP1ThpTuGRH4/edit?usp=sharing)
 - [Video Walkthrough](https://youtu.be/0fxK6_J6Jjc)
 - [Design_Document](./docs/design_doc.md)
