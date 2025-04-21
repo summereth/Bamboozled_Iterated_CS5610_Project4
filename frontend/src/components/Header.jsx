@@ -25,10 +25,12 @@ export default function Header() {
           {isHomePage && <SearchBox />}
           {isHomePage && (
             <Button
+              aria-label="Create a quiz"
               as={Link}
               to="/create"
               className="ms-3 rounded-pill"
               style={{
+                color: "var(--color-darkest)",
                 border: "var(--color-theme) solid 2px",
                 backgroundColor: "var(--color-theme)",
               }}

@@ -30,6 +30,7 @@ export default function QuizCard({
           <Card.Title className="fw-bold">{title}</Card.Title>
           <div className="d-flex flex-nowrap">
             <Button
+              aria-label="Edit quiz name"
               variant="outline-primary rounded"
               size="sm"
               className="me-2"
@@ -42,6 +43,7 @@ export default function QuizCard({
               <BsPencilFill size={14} />
             </Button>
             <Button
+              aria-label="Delete quiz"
               variant="outline-danger rounded"
               size="sm"
               style={{
