@@ -22,6 +22,19 @@ function Question() {
             key={option}
             disabled={hasAnswer}
             onClick={() => dispatch({ type: "newAnswer", payload: i })}
+            // Ensure keyboard accessibility
+            tabIndex="0"
+            onKeyDown={(e) => {
+              // Trigger click on Enter or Space key
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                if (!hasAnswer) {
+                  dispatch({ type: "newAnswer", payload: i });
+                }
+              }
+            }}
+            aria-pressed={i === answer}
+            aria-disabled={hasAnswer}
           >
             {option}
           </button>

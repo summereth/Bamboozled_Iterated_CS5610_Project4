@@ -24,7 +24,7 @@ function Footer() {
   return (
     <Container className="d-flex justify-content-between mt-3">
       {hasTimer && (
-        <div className="timer">
+        <div className="timer" aria-live="polite" aria-atomic="true">
           {hours < 10 ? `0${hours}` : hours}:{mins < 10 ? `0${mins}` : mins}:
           {seconds < 10 ? `0${seconds}` : seconds}
         </div>
@@ -33,6 +33,16 @@ function Footer() {
         <button
           className="btn btn-ui"
           onClick={() => dispatch({ type: "nextQuestion" })}
+          // Ensure keyboard accessibility
+          tabIndex="0"
+          onKeyDown={(e) => {
+            // Trigger click on Enter or Space key
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              dispatch({ type: "nextQuestion" });
+            }
+          }}
+          aria-label={index < questionNum - 1 ? "Next question" : "Submit quiz"}
         >
           {index < questionNum - 1 ? "Next" : "Submit"}
         </button>

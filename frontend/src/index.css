@@ -7,3 +7,55 @@
   --color-theme: #36ba98;
   --color-accent: #e76f51;
 }
+
+/* Make focus indicators clearly visible */
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Make all buttons properly focusable */
+button:not([disabled]),
+a,
+[role="button"],
+input,
+select,
+textarea {
+  /* Ensure these elements can receive focus */
+  outline: none;
+}
+
+button:not([disabled]):focus,
+a:focus,
+[role="button"]:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  /* Apply a clear focus style */
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Apply proper interaction styles */
+button:not([disabled]):hover,
+a:hover,
+[role="button"]:hover {
+  cursor: pointer;
+}
+
+/* Make disabled elements visually distinct */
+button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Add a visible focus style for keyboard navigation only */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
