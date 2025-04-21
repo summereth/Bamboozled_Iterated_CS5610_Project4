@@ -95,6 +95,27 @@ Copy `.example.env` file and change the name to `.env`. Modify environment varia
 
 Though I only have 24 quizzes. Questions from those quizzes in total are over 1000.
 
+### Does the app use a color consistent color palette that is aligned with the app purpose. Does it use consistent approval - cancel colors accross the whole app?
+
+I'm using a 6-color palette on my application. See rules in `frontend/src/index.css` file.
+
+```css
+:root {
+  --color-darkest: #27374d;
+  --color-dark: #526d82;
+  --color-medium: #9db2bf;
+  --color-light: #dde6ed;
+
+  --color-theme: #36ba98;
+  --color-accent: #e76f51;
+}
+```
+
+### Does the application pass the accessibility tests with axe or at least lighthouse without generating any errors/warnings without proper justification?
+
+![Report of axe dev tool](./docs/images/axe.png)
+![Report of lighthouse](./docs/images/lighthouse.png)
+
 ## Other documents
 
 - [Usability Study Report](./docs/Usability%20Study%20Report.pdf)
