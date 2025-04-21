@@ -26,9 +26,9 @@ export default function QuizCard({
   return (
     <Card className="my-4 p-2 rounded">
       <Card.Body>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between align-items-start">
           <Card.Title className="fw-bold">{title}</Card.Title>
-          <div>
+          <div className="d-flex flex-nowrap">
             <Button
               variant="outline-primary rounded"
               size="sm"
